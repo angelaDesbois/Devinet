@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapp"
+    tools:context=".activity.MenuIntentActivity"
+    >
+
+    <Button
+        android:id="@+id/btn_menu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:onClick="onClickMainActivity"
+        android:text="MainActivity"
+        android:textColor="@color/design_default_color_primary_variant"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_menu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="JOUER!!"
+        android:onClick="onClickCategorieList"
+        android:textColor="@color/design_default_color_primary"
+        android:background="@color/design_default_color_on_secondary"
+        />
+
+    <Button
+        android:id="@+id/btn_menu3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="RESULTAT!!"
+        android:onClick="onClickResultat"
+        android:background="@color/design_default_color_primary_variant"
+
+        />
+
+    <Button
+        android:id="@+id/btn_menu4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="PROPOSER!!"
+        android:onClick="onClickProposer"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
